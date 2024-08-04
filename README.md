@@ -10,7 +10,7 @@ In this example we will create a simple system that let us to make a button chan
 
 * Imports
 
-```
+```python
 from customtkinter import CTkButton
 from random import Random
 
@@ -21,7 +21,7 @@ from controller import Controller
 
 * Our View
 
-```
+```python
 class MyWindow(View):
 
     def __init__(self, controller, model):
@@ -48,7 +48,7 @@ Inherit our `View`from `View` abstract class and override `model_is_changed` met
 
 * Our Model
 
-```
+```python
 class MyWindowModel(ObservableModel):
 
     def __init__(self):
@@ -73,7 +73,7 @@ Inherit our `Model` from `ObservableModel` base abstract class and implement nec
 
 * Our Controller
 
-```
+```python
 class MyWindowController(Controller):
 
     def __init__(self, view_cls, model):
@@ -90,7 +90,7 @@ class MyWindowController(Controller):
 
 Inherit our `Controller` from `Controller` base abstract class. Our `Controller` controles creating `View` object therefore in its `__init__` method we pass our `Model` object and CLASS itself but not certain object of our `View` beacuse of this:
 
-```
+```python
 class Controller(ABC):
 
     def __init__(self, view_cls: 'type[View]', model: ObservableModel):
@@ -102,7 +102,7 @@ class Controller(ABC):
 
 ### Result
 
-```
+```python
 from window import MyWindow, MyWindowModel, MyWindowController
 
 def main():
