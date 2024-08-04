@@ -95,7 +95,7 @@ class Controller(ABC):
 
     def __init__(self, view_cls: 'type[View]', model: ObservableModel):
 
-        **self._view = view_cls(self, model)**
+        self._view = view_cls(self, model)
         
         # Some code...
 ```
