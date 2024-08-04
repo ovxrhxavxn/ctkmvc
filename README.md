@@ -1,5 +1,11 @@
 # CTkMVC
 
+## Install
+
+```
+pip install ctkmvc
+```
+
 ## Description
 
 The library that provides a few base classes for easy using MVC architecture pattern together with CTk library to make simple and lightweight desktop applications.
