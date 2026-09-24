@@ -12,7 +12,7 @@ The library that provides a few base classes for easy using MVC architecture pat
 
 ## Using example
 
-In this example we will create a simple system that let us to make a button changing its text by clicking on it. To make your own `View`, `Controller` and `Model` classes you should inherit them from base abstract classes `View`, `Controller` and `ObservableModel` like that:
+In this example we will create a simple system that let us make a button changing its text by clicking on it. To make your own `View`, `Controller` and `Model` classes you should inherit them from base abstract classes `View`, `Controller` and `ObservableModel` like that:
 
 * Imports
 
